@@ -19,6 +19,16 @@ svg {
    
 }
 
+header h1 {
+    padding-left: 30px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: ;
+    font-size: 42px;
+    color: #E2E8F0;
+
+}
+
 .main-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -28,13 +38,25 @@ svg {
 .section1 {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
+.about {
+    font-weight: bold;
+    font-size: large;
+    color: #E2E8F0;
+    margin-top: 30px;
+}
 .intro {
     width: 30%;
+    height: 300px;
+    width: 600px;
     justify-self: center;
+    margin-top: -5px;
 }
+
+
 
 footer {
     display: grid;
