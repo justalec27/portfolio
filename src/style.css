@@ -21,9 +21,8 @@ svg {
 
 header h1 {
     padding-left: 30px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     word-spacing: 2px;
-    font-weight: ;
     font-size: 42px;
     color: #E2E8F0;
 
@@ -44,21 +43,117 @@ header h1 {
 
 .about {
     font-weight: bold;
-    font-size: large;
+    font-size: 18px;
     color: #E2E8F0;
     margin-top: 30px;
 }
 .intro {
     width: 30%;
     height: 300px;
-    width: 600px;
+    width: 700px;
     justify-self: center;
     margin-top: -5px;
 }
 
+.section2 {
+    margin-top: 20px;
+    height: 200px;
+}
 
+.section2 .title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E2E8F0;
+}
+
+.tech-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    width: 700px;
+    justify-self: center;
+
+}
+
+.tech-container p {
+    text-align: center;
+    color: #E2E8F0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tech-container svg {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+
+}
+
+.section3 {
+  margin-top: -100px;
+}
+.section3 .title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E2E8F0;
+
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    justify-self: center;
+}
+
+.project1 {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 700px;
+}
+
+.project1:hover {
+    background-color: white;
+}
+
+.project1 .right {
+    margin-left: -120px;
+}
+
+.right button {
+    background-color: #142C3F;
+    color: #5CE2D3;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+    text-align: center;
+    margin-right: 3px;
+
+
+}
+
+.project-title {
+    font-weight: bold;
+    color: #DEE4EE;
+}
+
+
+.project1 .left img {
+   margin-top: 20px;
+
+}
 
 footer {
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -68,3 +163,17 @@ footer p {
     justify-self: end;
     margin-right: 10px;
 }
+
+#my-div {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #2559de;
+    transform: translate(-50%, -50%);
+    opacity: 10%;
+    border-radius: 80%;
+    backface-visibility: hidden;
+    z-index: 1;
+    filter: blur(99px);
+}
+
