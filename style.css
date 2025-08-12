@@ -111,17 +111,20 @@ header h1 {
     justify-self: center;
 }
 
-.project1 {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 10px;
+.portfolio-container > div {
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     width: 700px;
 }
 
-.project1:hover {
-    background-color: white;
+.portfolio-container > div:hover {
+    border-style: groove;
+    border: 1px solid #e2e2e213 ;
+    background-color: #e2e2e213;
+    border-radius: 8px;
 }
 
 .project1 .right {
@@ -164,7 +167,7 @@ footer p {
     margin-right: 10px;
 }
 
-#my-div {
+/* #my-div {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -176,4 +179,4 @@ footer p {
     z-index: 1;
     filter: blur(99px);
 }
-
+ */
