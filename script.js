@@ -1,8 +1,8 @@
 let myDiv = document.getElementById("my-div");
-//Detect touch device
+
+// Detect touch device
 function isTouchDevice() {
   try {
-    //We try to create TouchEvent. It would fail for desktops and throw error
     document.createEvent("TouchEvent");
     return true;
   } catch (e) {
@@ -11,21 +11,20 @@ function isTouchDevice() {
 }
 
 const move = (e) => {
-  //Try, catch to avoid any errors for touch screens (Error thrown when user doesn't move his finger)
+  let x, y; // Declare outside try
   try {
-    //PageX and PageY return the position of client's cursor from top left of screen
-    let x = !isTouchDevice() ? e.pageX : e.touches[0].pageX;
-    let y = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
-  } catch (e) {}
-  //set left and top of div based on mouse position
+    x = !isTouchDevice() ? e.pageX : e.touches[0].pageX;
+    y = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
+  } catch (err) {
+    return; // exit if touch coords fail
+  }
+  
   myDiv.style.left = x + "px";
   myDiv.style.top = y + "px";
 };
-//For mouse
-document.addEventListener("mousemove", (e) => {
-  move(e);
-});
-//For touch
-document.addEventListener("touchmove", (e) => {
-  move(e);
-});
+
+// For mouse
+document.addEventListener("mousemove", move);
+
+// For touch
+document.addEventListener("touchmove", move);

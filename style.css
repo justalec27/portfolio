@@ -59,7 +59,7 @@ header h1 {
 
 .about {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     color: #E2E8F0;
     margin-top: 30px;
     text-align: center;
@@ -79,7 +79,7 @@ header h1 {
 
 .section2 .title {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: #E2E8F0;
 }
@@ -108,11 +108,11 @@ header h1 {
 }
 
 .section3 {
-  margin-top: -100px;
+  margin-top: -140px;
 }
 .section3 .title {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: #E2E8F0;
 
@@ -169,6 +169,8 @@ header h1 {
 
 .project1 .left img {
    margin-top: 20px;
+   border-radius: 5px;
+   border: 3px solid #e2e2e213 ;
 
 }
 
@@ -185,7 +187,7 @@ footer p {
     color: white;
 }
 
-/* #my-div {
+#my-div {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -196,9 +198,5 @@ footer p {
     backface-visibility: hidden;
     z-index: 1;
     filter: blur(99px);
+     pointer-events: none;
 }
- */
-
- footer {
-
- }
