@@ -40,7 +40,6 @@ header h1 {
     word-spacing: 2px;
     font-size: 42px;
     color: #E2E8F0;
-    letter-spacing: 4px;
 
 }
 
@@ -193,7 +192,7 @@ footer p {
     height: 500px;
     background: #2559de;
     transform: translate(-50%, -50%);
-    opacity: 10%;
+    opacity: 15%;
     border-radius: 80%;
     backface-visibility: hidden;
     z-index: 1;
